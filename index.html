@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>VNA Booking</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-8 col-lg-4 mx-auto bg-light p-4 my-4 rounded border">
+        <div class="h2">&#9992; VNA Booking</div>
+        <br>
+        <form>
+          <div class="form-group">
+            <label for="destinationfrom">From:</label>
+            <select class="form-control" id="flyFrom">
+              <option>SVO</option>
+              <option>HAN</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="destinationto">To:</label>
+            <select class="form-control" id="flyTo">
+              <option>HAN</option>
+              <option>SVO</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="Date1">Depart date:</label>
+            <br>
+            <input class="form-control" id="departDate" type="date">
+          </div>
+          <div class="form-group">
+            <label for="Date2">Return date:</label>
+            <br>
+            <input class="form-control" id="returnDate" type="date">
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="currency">Currency:</label>
+                <select class="form-control" id="currency">
+                  <option>VN</option>
+                  <option>RU</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="language">Language:</label>
+                <select class="form-control" id="language">
+                  <option>vi-VI</option>
+                  <option>ru-RU</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <br>
+          <input type="button" name="btnser" class="btn btn-primary btn-block" onclick="Search()" value="Search" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
